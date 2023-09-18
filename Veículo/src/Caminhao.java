@@ -5,6 +5,10 @@ public class Caminhao extends Veiculo {
     public Caminhao() {
     }
 
+    public Caminhao(String nome, int ano, String modelo, String marca) {
+        super(nome, ano, modelo, marca);
+    }
+
     public Caminhao(String nome, int ano, String modelo, String marca, int qtdEixo) {
         super(nome, ano, modelo, marca);
         this.qtdEixo = qtdEixo;
@@ -20,7 +24,7 @@ public class Caminhao extends Veiculo {
 
     @Override
     public String toString() {
-        return "********* Caminhao *********" +
+        return "\n********* Caminhao *********" +
                "\n\nNome: " + getNome() +
                "\nAno: " + getAno() +
                "\nModelo: " + getModelo() +
